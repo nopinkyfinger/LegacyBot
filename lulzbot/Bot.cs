@@ -136,8 +136,10 @@ namespace lulzbot
             //wait_event = new ManualResetEvent(false);
 
             // Quick and dirty load of pastebin stuff
-
             string buffer;
+
+
+            //Somehow use a file for this or something, try to make it available on github without compromising security
 
             using (Stream stream = new FileStream("./pastebin.dat", FileMode.Open))
             {
@@ -145,7 +147,7 @@ namespace lulzbot
                 {
                     buffer = Encryption.Decrypt(file.ReadToEnd());
                 }
-            }
+            }            
 
             int index = buffer.IndexOf('\n');
             pastebinUserKey = buffer.Substring(0, index);
