@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51FF4976-1A49-4ADA-AF66-9C7919E3EE5C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>lulzbot</RootNamespace>
+    <AssemblyName>lulzbot</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>E:\lulzBot\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '64bit|x86'">
+    <OutputPath>bin\x86\64bit\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '64bit|x64'">
+    <OutputPath>bin\x64\64bit\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>lulzbot.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '64bit|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\64bit\</OutputPath>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D27F38774D92EDE5F2AB0D480E57F7C9B6936E20</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>lulzbot_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCQuery">
+      <HintPath>MCQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>./MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http">
+      <HintPath>System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="SRCDSQuery">
+      <HintPath>SRCDSQuery.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bot.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="Extensions\AI.cs" />
+    <Compile Include="Extensions\BDS.cs" />
+    <Compile Include="Extensions\Colors.cs" />
+    <Compile Include="Extensions\Commands\Core\Act.cs" />
+    <Compile Include="Extensions\Commands\Core\Admin.cs" />
+    <Compile Include="Extensions\Commands\Core\Autojoin.cs" />
+    <Compile Include="Extensions\Commands\Core\Ban.cs" />
+    <Compile Include="Extensions\Commands\Core\Channels.cs" />
+    <Compile Include="Extensions\Commands\Core\Chat.cs" />
+    <Compile Include="Extensions\Commands\Core\Clear.cs" />
+    <Compile Include="Extensions\Commands\Core\Command.cs" />
+    <Compile Include="Extensions\Commands\Core\Credits.cs" />
+    <Compile Include="Extensions\Commands\Core\CTrig.cs" />
+    <Compile Include="Extensions\Commands\Core\Cycle.cs" />
+    <Compile Include="Extensions\Commands\Core\Debug.cs" />
+    <Compile Include="Extensions\Commands\Core\Demote.cs" />
+    <Compile Include="Extensions\Commands\Core\Disconnects.cs" />
+    <Compile Include="Extensions\Commands\Core\Eval.cs" />
+    <Compile Include="Extensions\Commands\Core\Exec.cs" />
+    <Compile Include="Extensions\Commands\Core\Ext.cs" />
+    <Compile Include="Extensions\Commands\Core\Help.cs" />
+    <Compile Include="Extensions\Commands\Core\Kick.cs" />
+    <Compile Include="Extensions\Commands\Core\Kill.cs" />
+    <Compile Include="Extensions\Commands\Core\NetInfo.cs" />
+    <Compile Include="Extensions\Commands\Core\NpSay.cs" />
+    <Compile Include="Extensions\Commands\Core\Override.cs" />
+    <Compile Include="Extensions\Commands\Core\Promote.cs" />
+    <Compile Include="Extensions\Commands\Core\Say.cs" />
+    <Compile Include="Extensions\Commands\Core\Set.cs" />
+    <Compile Include="Extensions\Commands\Core\Sudo.cs" />
+    <Compile Include="Extensions\Commands\Core\System.cs" />
+    <Compile Include="Extensions\Commands\Core\Unban.cs" />
+    <Compile Include="Extensions\Commands\Core\Update.cs" />
+    <Compile Include="Extensions\Commands\Core\Whois.cs" />
+    <Compile Include="Extensions\Commands\Users\Access.cs" />
+    <Compile Include="Extensions\Commands\Users\Users.cs" />
+    <Compile Include="Extensions\Core.cs" />
+    <Compile Include="Extensions\Commands\Core\Reload.cs" />
+    <Compile Include="Extensions\Extension.cs" />
+    <Compile Include="Extensions\HTTPD.cs" />
+    <Compile Include="Extensions\Logger.cs" />
+    <Compile Include="Extensions\RP Tools\Character.cs" />
+    <Compile Include="Extensions\RP Tools\Roleplay.cs" />
+    <Compile Include="Extensions\RP Tools\RpLogger.cs" />
+    <Compile Include="Extensions\RP.cs" />
+    <Compile Include="Extensions\Users.cs" />
+    <Compile Include="MySQL.cs" />
+    <Compile Include="Networking\AuthToken.cs" />
+    <Compile Include="Networking\dAmnPacket.cs" />
+    <Compile Include="Networking\Packets\Chats.cs" />
+    <Compile Include="Networking\Packets\dAmnClient.cs" />
+    <Compile Include="Networking\Packets\Kick.cs" />
+    <Compile Include="Networking\Packets\Kill.cs" />
+    <Compile Include="Networking\Packets\Login.cs" />
+    <Compile Include="Networking\Packets\Promotion.cs" />
+    <Compile Include="Networking\Packets\Set.cs" />
+    <Compile Include="Networking\Packets\Whois.cs" />
+    <Compile Include="Networking\Socket.cs" />
+    <Compile Include="ConIO.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Storage.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="Types.cs" />
+    <Compile Include="Extensions\Commands\Core\About.cs" />
+    <Compile Include="Extensions\Commands\Core\Commands.cs" />
+    <Compile Include="Extensions\Commands\Core\Events.cs" />
+    <Compile Include="Extensions\Commands\Core\Get.cs" />
+    <Compile Include="Extensions\Commands\Core\Join.cs" />
+    <Compile Include="Extensions\Commands\Core\Part.cs" />
+    <Compile Include="Extensions\Commands\Core\Ping.cs" />
+    <Compile Include="Extensions\Commands\Core\Quit.cs" />
+    <Compile Include="Extensions\Commands\Core\Uptime.cs" />
+    <Compile Include="Extensions\Events\Core\Connect.cs" />
+    <Compile Include="Extensions\Events\Core\PreAuth.cs" />
+    <Compile Include="Extensions\Events\Core\Join.cs" />
+    <Compile Include="Extensions\Events\Core\Part.cs" />
+    <Compile Include="Extensions\Events\Core\Property.cs" />
+    <Compile Include="Extensions\Events\Core\Login.cs" />
+    <Compile Include="Extensions\Events\Core\Recv.cs" />
+    <Compile Include="Extensions\Events\Core\Kicked.cs" />
+    <Compile Include="Extensions\Events\Core\Disconnect.cs" />
+    <Compile Include="Extensions\Events\Core\Errors.cs" />
+    <Compile Include="Extensions\Events\Core\Ping.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="lulzbot_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
